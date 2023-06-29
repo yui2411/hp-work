@@ -106,7 +106,6 @@ const sx: SxProps<Theme> = {
 
   ".Company-text-table": {
     padding: "74px 0 100px 0",
-
     marginLeft: {
       md: "310px",
       xs: "35px",
