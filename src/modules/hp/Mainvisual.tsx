@@ -4,24 +4,30 @@ import mainimg from "../../resources/hp/mainvisual_backgraound.png";
 export const Mainvisual = () => {
   return (
     <Box className="Mainvisual" sx={sx}>
-
       <Box className="Main-img">
         <Box className="Catch-copy-group">
-          <Box className="Catch-copy">安心<span className="Catch-copy-small">と</span>信頼<br className="catch-br" />
-          <span className="Catch-copy-mostsmall">×</span><br className="none-br" />高度<span className="Catch-copy-small">な</span><br className="catch-br" />技術力</Box>
-          <Box className="Catch-copy-sub">高品質な開発を標準に。</Box></Box>
+          <Box className="Catch-copy">
+            安心<span className="Catch-copy-small">と</span>信頼
+            <br className="catch-br" />
+            <span className="Catch-copy-mostsmall">×</span>
+            <br className="none-br" />
+            高度<span className="Catch-copy-small">な</span>
+            <br className="catch-br" />
+            技術力
+          </Box>
+          <Box className="Catch-copy-sub">高品質な開発を標準に。</Box>
         </Box>
+      </Box>
     </Box>
   );
 };
 
 const sx: SxProps<Theme> = {
-  "&.Mainvisual" : {
+  "&.Mainvisual": {
     width: "100%",
-    
   },
 
-  ".Main-img" : {
+  ".Main-img": {
     backgroundImage: `url(${mainimg})`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -30,10 +36,9 @@ const sx: SxProps<Theme> = {
       md: "700px",
       xs: "550px",
     },
-    
   },
 
-  ".Catch-copy-group" : {
+  ".Catch-copy-group": {
     fontWeight: "700",
     fontFamily: "Noto Sans JP",
     paddingTop: {
@@ -51,8 +56,8 @@ const sx: SxProps<Theme> = {
     textUnderlineOffset: "5px",
   },
 
-  ".Catch-copy" : {
-    fontSize : {
+  ".Catch-copy": {
+    fontSize: {
       md: "96px",
       xs: "57px",
     },
@@ -67,8 +72,8 @@ const sx: SxProps<Theme> = {
     paddingBottom: "12px",
   },
 
-  ".Catch-copy-small" : {
-    fontSize : {
+  ".Catch-copy-small": {
+    fontSize: {
       md: "64px",
       xs: "38px",
     },
@@ -77,12 +82,11 @@ const sx: SxProps<Theme> = {
       xs: "55px",
     },
     padding: "0 9px 0 9px",
-    
   },
 
-  ".Catch-copy-mostsmall" : {
+  ".Catch-copy-mostsmall": {
     padding: "0 0 0 22px",
-    fontSize : {
+    fontSize: {
       md: "96px",
       xs: "57px",
     },
@@ -92,11 +96,11 @@ const sx: SxProps<Theme> = {
     display: {
       md: "inline",
       xs: "none",
-    }
+    },
   },
 
-  ".Catch-copy-sub" : {
-    fontSize : {
+  ".Catch-copy-sub": {
+    fontSize: {
       md: "48px",
       xs: "24px",
     },
@@ -109,19 +113,17 @@ const sx: SxProps<Theme> = {
     },
   },
 
-
-  ".catch-br" : {
+  ".catch-br": {
     display: {
       xs: "block",
       md: "none",
     },
   },
 
-  ".none-br" : {
+  ".none-br": {
     display: {
       xs: "none",
       md: "block",
     },
   },
-
 };
